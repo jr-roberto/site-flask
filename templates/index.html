@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>{
+            const root=location.origin;
+            const link_css=document.createElement("link");
+            link_css.rel="stylesheet"
+            if (root.includes('127.0.0.1:5500')) {
+                link_css.href=`http://127.0.0.1:5000/static/css/style.css`;
+            } else {
+                link_css.href=`${root}/static/css/style.css`;
+            }
+            document.head.appendChild(link_css);
+        });
+    </script>
     <title>Document</title>
 </head>
 <body>
-    
+
     <h1>Ola mundo</h1>
-    <a href="about">Sobre</a>
 
 </body>
 </html>

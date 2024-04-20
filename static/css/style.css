@@ -4,11 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    display: flex;
-    height: 100vh;
-}
+
 
 h1 {
     margin: auto;
+    color: red;
 }
+
