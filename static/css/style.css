@@ -4,10 +4,89 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-h1 {
-    margin: auto;
-    color: red;
+body {
+    width: 100svw;
+    height: 100svh;
+    background-color: whitesmoke;
 }
 
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #5E17EB;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    background-color: white;
+}
+
+.card {
+    width: 300px;
+    height: 180px;
+    border: solid 1px #5E17EB;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.img-legend {
+    max-width: 130px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: #5e17eb4d solid 1px;
+}
+
+.img-legend img {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.img-legend .legend {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    padding: 5px;
+    background-color: hsla(276, 44%, 11%, 0.2);
+    width: 100%;
+    font-size: small;
+}
+
+.precos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    font-weight: 600;
+    color: #5E17EB;
+    padding-left: 20px;
+}
+
+.precos div {
+    display: flex;
+    flex-direction: column;
+}
+
+.precos div .title {
+    font-size: .6rem;
+}
+
+.precos .preco-medio > .preco {
+    font-size: 3rem;
+    position: relative;
+}
+
+.precos .preco-medio > .preco span {
+    font-size: 1.5rem;
+    top: 3px;
+    position: absolute;
+}

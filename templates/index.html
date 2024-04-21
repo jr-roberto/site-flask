@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
+        // SCRIPT MODO DEV
         const script_md=document.head.querySelectorAll("script");
         document.addEventListener("DOMContentLoaded",()=>{
             const root=location.origin;
@@ -16,13 +17,86 @@
             }
             document.head.appendChild(link_css);
         });
-        setTimeout(script_md[0].remove(),1000);
+        setTimeout(()=>script_md[0].remove(),500);
     </script>
+    <!-- <link rel="stylesheet" href="static/css/style.css"> -->
     <title>Document</title>
 </head>
 <body>
 
-    <h1>Ola mundo</h1>
+    <header></header>
+    <main>
+        <div class="card">
+            <div class="img-legend">
+                <img src="https://thepetitpizzaria.com.br/gramado/wp-content/uploads/2021/06/Pet-2-Litros-Coca-Cola-PNG.png" alt="prod">
+                <div class="legend">
+                    <span>COCA COLA 2L</span>
+                    <span>U. Medida: L</span>
+                </div>
+            </div>
+            <div class="precos">
+                <div class="preco-medio">
+                    <span class="title">Preco medio</span>
+                    <span class="preco">15<span>,50</span></span>
+                </div>
+                <div class="preco-ultimo">
+                    <span class="title">Ultimo preco</span>
+                    <span class="preco">15<span>,50</span></span>
+                </div>
+                <div class="preco-melhor">
+                    <span class="title">Melhor preco</span>
+                    <span class="preco">15<span>,50</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-legend">
+                <img src="https://thepetitpizzaria.com.br/gramado/wp-content/uploads/2021/06/Pet-2-Litros-Coca-Cola-PNG.png" alt="prod">
+                <div class="legend">
+                    <span>COCA COLA 2L</span>
+                    <span>U. Medida: L</span>
+                </div>
+            </div>
+            <div class="precos">
+                <div class="preco-medio">
+                    <span class="title">Preco medio</span>
+                    <span class="preco">15<span>,50</span></span>
+                </div>
+                <div class="preco-ultimo">
+                    <span class="title">Ultimo preco</span>
+                    <span class="preco">15<span>,50</span></span>
+                </div>
+                <div class="preco-melhor">
+                    <span class="title">Melhor preco</span>
+                    <span class="preco">15<span>,50</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-legend">
+                <img src="https://thepetitpizzaria.com.br/gramado/wp-content/uploads/2021/06/Pet-2-Litros-Coca-Cola-PNG.png" alt="prod">
+                <div class="legend">
+                    <span>COCA COLA 2L</span>
+                    <span>U. Medida: L</span>
+                </div>
+            </div>
+            <div class="precos">
+                <div class="preco-medio">
+                    <span class="title">Preco medio</span>
+                    <span class="preco">15<span>,50</span></span>
+                </div>
+                <div class="preco-ultimo">
+                    <span class="title">Ultimo preco</span>
+                    <span class="preco">15<span>,50</span></span>
+                </div>
+                <div class="preco-melhor">
+                    <span class="title">Melhor preco</span>
+                    <span class="preco">15<span>,50</span></span>
+                </div>
+            </div>
+        </div>
+    </main>
 
 </body>
 </html>
