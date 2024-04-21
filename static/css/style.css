@@ -21,6 +21,11 @@ main {
     height: calc(100% - 60px);
     overflow-y: auto;
     background-color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 .card {
@@ -28,7 +33,7 @@ main {
     height: 180px;
     border: solid 1px #5E17EB;
     border-radius: 10px;
-    margin: 20px;
+    /* margin: 20px; */
     position: relative;
     display: flex;
     overflow: hidden;
