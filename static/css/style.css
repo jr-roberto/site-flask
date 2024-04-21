@@ -95,3 +95,8 @@ main {
     top: 3px;
     position: absolute;
 }
+
+.form-cad-produto {
+    max-width: 400px;
+    width: 100%;
+}

@@ -9,3 +9,7 @@ CORS(app=app)
 @app.route("/index")
 def index():
     return render_template("index.html")
+
+@app.route("/cad_produto")
+def cad_produto():
+    return render_template("cad_produto.html")

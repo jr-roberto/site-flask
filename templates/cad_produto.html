@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // SCRIPT MODO DEV
+        const script_md=document.head.querySelectorAll("script");
+        document.addEventListener("DOMContentLoaded",()=>{
+            const root=location.origin;
+            const link_css=document.createElement("link");
+            link_css.rel="stylesheet"
+            if (root.includes('127.0.0.1:5500')) {
+                link_css.href=`http://127.0.0.1:5000/static/css/style.css`;
+            } else {
+                link_css.href=`${root}/static/css/style.css`;
+            }
+            document.head.appendChild(link_css);
+        });
+        setTimeout(()=>script_md[0].remove(),500);
+    </script>
+    <!-- <link rel="stylesheet" href="static/css/style.css"> -->
+    <title>Document</title>
+</head>
+<body>
+
+    <header></header>
+    <main>
+
+        <form action="#" class="form-cad-produto">
+
+            <label for="desc_produto">
+                Desc. Produto
+                <input type="text" name="desc_produto" id="desc_produto" autocomplete="off">
+            </label>
+
+            
+
+        </form>
+
+    </main>
+
+</body>
+</html>
